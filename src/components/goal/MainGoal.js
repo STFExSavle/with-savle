@@ -20,7 +20,11 @@ export default function MainGoal() {
           <MainGoalPostItem />
           <MainGoalSlider />
         </div>
-        {matchQuery.sm === true ? <MainGoalButton /> : <></>}
+        {matchQuery.md === false || matchQuery.sm === true ? (
+          <MainGoalButton />
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
